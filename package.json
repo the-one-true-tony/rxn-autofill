@@ -1,0 +1,15 @@
+{
+  "name": "rxn-autofill",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "redis": "^2.7.1"
+  }
+}
