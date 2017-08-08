@@ -3,6 +3,8 @@ const axios = require('axios');
 const client = redis.createClient(process.env.REDIS_URL);
 
 module.exports.populateNames = () => {
+// populateNames is used to populate the Redis server with prefixes
+// drug/concept names
 
   const buildAutoFill = (names) => {
     if(names.length === 0) return;
