@@ -5,8 +5,8 @@ const port = process.env.PORT || 3000;
 const client = redis.createClient(process.env.REDIS_URL);
 
 bluebird.promisifyAll(redis.RedisClient.prototype);
-const pp = require('./pull_names');
-pp.populateNames();
+// const pp = require('./pull_names');
+// pp.populateNames();
 
 client.on('connect', () => {
   console.log('Connected to Redis...');
